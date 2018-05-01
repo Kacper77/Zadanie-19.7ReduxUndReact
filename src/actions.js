@@ -11,7 +11,7 @@ export function addComment(text) {
     return {
         type: ADD_COMMENT,
         text,
-        id: uuid.v4
+        id: uuid.v4()
     }
 }
 
@@ -30,10 +30,10 @@ export function removeComment(id) {
     }
 }
 
-export function thumbUpComment(id) {
+export function thumbUpComment(commentId) {
     return {
         type: THUMB_UP_COMMENT,
-        id
+        id: commentId
     }
 }
 
