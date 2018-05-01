@@ -7,8 +7,12 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducer from './reducer';
 import { addComment } from './actions';
+import DevTools from './DevTools';
 
-const store = createStore(reducer);
+const store = createStore(
+    reducer,
+    DevTools.instrument()
+);
 
 
 ReactDOM.render(

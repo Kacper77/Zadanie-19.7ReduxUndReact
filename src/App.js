@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
 import CommentListContainer from './CommentListContainer';
+import DevTools from './DevTools';
 
 const App = () => {
     return (
         <div className="App">
-      Tu będzie lista komentarzy!
-      <CommentListContainer/>
-    </div>
+      		<CommentListContainer/>
+      		<DevTools/>
+    	</div>
     );
 };
 
